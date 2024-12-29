@@ -1,28 +1,8 @@
-version: '3.7'
-
-services:
-  app:
-    image: mynetwork-app:latest  # Your app Docker image
-    container_name: myn_app
-    environment:
-      - NODE_ENV=production
-      - USER_EMAIL=wayne@mynetwork.com  # User email as environment variable
-      - APP_SECRET_KEY=your_secret_key_here  # Secret key for the app
-      - DB_HOST=your_database_host  # Your database host
-      - DB_USER=your_db_user  # Your database username
-      - DB_PASSWORD=your_db_password  # Your database password
-    ports:
-      - "80:80"  # Map container port 80 to host port 80
-    volumes:
-      - ./app:/app  # Mount app directory to container
-    networks:
-      - app-network
-    restart: always
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-
-networks:
-  app-network:
-    driver: bridge
+cloud_config_url: "https://github.com/yourusername/mynetwork-app-cloud-config"
+server: "mynetwork-app-server"
+ssh_key: "your-public-ssh-key-here"
+username: "wayne"  # GitHub username
+database:
+  host: "your_database_host"
+  user: "your_db_user"
+  password: "your_db_password"
