@@ -1,0 +1,44 @@
+name: Manual Server Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      server_address:
+        description: 'Server address to deploy to'
+        required: true
+        type: string
+        default: 'www.mynetwork.com'
+      
+      username:
+        description: 'SSH username'
+        required: true
+        type: string
+        default: 'wayne'
+
+      ssh_key:
+        description: 'SSH private key for authentication'
+        required: true
+        type: string
+        default: 'your_private_key_here'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout code
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Step 2: Set up SSH for deployment
+    - name: Set up SSH for deployment
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ inputs.ssh_key }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ inputs.server_address }} >> ~/.ssh/known_hosts
+
+    # Step 3: Deploy to server
+    - name: Deploy application to server
+      run: |
+        ssh -i ~/.ssh/id_rsa ${{ inputs.username }}@${{ inputs.server_address }} 'cd /path/to/mynetwork/app && git pull origin main && docker-compose up -d'
