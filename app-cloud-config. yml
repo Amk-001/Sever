@@ -1,8 +1,8 @@
-cloud_config_url: "https://github.com/yourusername/mynetwork-app-cloud-config"
+cloud_config_url: "https://github.com/Amk-001/mynetwork-app-cloud-config"
 server: "mynetwork-app-server"
-ssh_key: "your-public-ssh-key-here"
-username: "wayne"  # GitHub username
+ssh_key: "3c91e4693b444ca230ecb9f6ba08d334"
+username: "Aung Thuyrain"  # GitHub username
 database:
-  host: "your_database_host"
-  user: "your_db_user"
-  password: "your_db_password"
+  host: "wayne.mm.92@gamil.com"
+  user: "Amk-001"
+  password: "449530@mK"
