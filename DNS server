@@ -1,0 +1,82 @@
+;;
+;; Domain:     mynetwork.com.
+;; Exported:   2024-12-30 01:52:59
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+mynetwork.com	3600	IN	SOA	andronicus.ns.cloudflare.com. dns.cloudflare.com. 2048719017 10000 2400 604800 3600
+
+;; NS Records
+mynetwork.com.	86400	IN	NS	andronicus.ns.cloudflare.com.
+mynetwork.com.	86400	IN	NS	roxy.ns.cloudflare.com.
+
+;; A Records
+mynetwork.com.	1	IN	A	202.31.187.154
+
+;; CNAME Records
+3.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+5.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+af.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+agents.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+al.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+alpha.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+bn.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+bounces.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+bsb.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+bt.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+cj.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+client.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+courses.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+cv.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+cw.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+deals.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+*.dev.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+ds.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+ff.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+fsapi.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+gp.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+hc.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+hd.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+he.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+hk.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+h.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+hw.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+ie.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+ij.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+ios.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+*.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+pages.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+payment.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+photos.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+projects.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+reports.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+sb.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+static2.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+static.m.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+svn.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+team.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+us.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+wordpress.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+www.m.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+www.mynetwork.com.	1	IN	CNAME	mynetwork.com.
+zendesk4.mynetwork.com.	1	IN	CNAME	mynetwork.com.
