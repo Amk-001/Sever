@@ -1,0 +1,2 @@
+SSLCertificateFile /etc/letsencrypt/live/nynetwork.com/fullchain.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/nynetwork.com/privkey.pem
