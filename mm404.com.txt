@@ -1,0 +1,55 @@
+;;
+;; Domain:     mm404.com.
+;; Exported:   2025-02-05 09:03:05
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+mm404.com	3600	IN	SOA	andronicus.ns.cloudflare.com. dns.cloudflare.com. 2049041278 10000 2400 604800 3600
+
+;; NS Records
+mm404.com.	86400	IN	NS	andronicus.ns.cloudflare.com.
+mm404.com.	86400	IN	NS	roxy.ns.cloudflare.com.
+
+;; A Records
+mail.mm404.com.	1	IN	A	172.5.173.130 ; cf_tags=cf-proxied:false
+mm404.com.	1	IN	A	172.5.173.130 ; cf_tags=cf-proxied:false
+
+;; CAA Records
+mm404.com.	1	IN	CAA	0 issue "letsencrypt.org"
+mm404.com.	1	IN	CAA	0 iodef "mailto:me@mm404.com"
+
+;; CNAME Records
+amk-001.mm404.com.	1	IN	CNAME	mm404.com. ; _github-pages-challenge-Amk-001 cf_tags=cf-proxied:false
+sever.mm404.com.	1	IN	CNAME	www.sever.mm404.com. ; cf_tags=cf-proxied:false
+www.amk.server.mm404.com.	1	IN	CNAME	amk-001.github.io. ; _github-pages-challenge-Amk-001 cf_tags=cf-proxied:false
+
+;; MX Records
+mail.mm404.com.	1	IN	MX	10 mail.mm404.com.
+mm404.com.	1	IN	MX	10 mx02.mail.icloud.com.
+mm404.com.	1	IN	MX	10 mx01.mail.icloud.com.
+
+;; TXT Records
+_dmarc.mm404.com.	1	IN	TXT	"v=DMARC1; p=none; rua=mailto:7fa7486de6e64e468b0601fbe411ebff@dmarc-reports.cloudflare.net,mailto:me@mm404.com;"
+mail.mm404.com.	1	IN	TXT	"v=spf1 include:mail.mm404.com -all"
+mm404.com.	1	IN	TXT	"apple-domain=HjmlT0ZgA4ixtqoi"
+server.mm404.com.	1	IN	TXT	"v=spf1 include:icloud.com -all"
