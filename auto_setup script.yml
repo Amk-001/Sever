@@ -1,0 +1,43 @@
+name: Auto Setup Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository ကို Clone ပြုလုပ်ခြင်း
+        uses: actions/checkout@v4
+
+      - name: DND Setup
+        run: |
+          echo "Setting up DND..."
+
+      - name: Hosting Setup
+        run: |
+          echo "Deploying hosting..."
+
+      - name: Website Builder
+        run: |
+          echo "Building website..."
+
+      - name: Run Key Cracker
+        run: |
+          echo "Running key cracker..."
+
+      - name: Fix File Credit
+        run: |
+          echo "Fixing file credit issues..."
+
+      - name: Delete Files
+        run: |
+          echo "Deleting unnecessary files..."
+
+      - name: ERROR Checking
+        run: |
+          echo "Checking for errors..."
