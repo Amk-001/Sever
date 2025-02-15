@@ -1,0 +1,21 @@
+## DNS Confi
+#https://server-mm404.com
+
+# TXT 
+
+ 152ed4af10502e43b9139748e609a1
+
+
+Value 
+
+_github-pages-challenge-server-mm404
+
+1. Create a TXT record in your DNS configuration for the following hostname: _github-pages-challenge-server-mm404.server-mm404.brm
+2. Use this code for the value of the TXT record: 152ed4af10502e43b9139748e609a1
+3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
+
+[![server-mm404](https://github.com/server-mm404/sever-mm404.github.io/actions/workflows/static.yml/badge.svg)](https://github.com/server-mm404/sever-mm404.github.io/actions/workflows/static.yml)
+
+
+"116.206.192.131, 3.172.18.117"
+ https://mxtoolbox.com/whatismyip/?justforyou=1#:~:text=116.206.192.131%2C%203.172.18.117
